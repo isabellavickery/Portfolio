@@ -1,0 +1,273 @@
+html 
+{scroll-behavior: smooth;}
+
+ .bio{
+background-image: url("https://www.vtldesign.hu/wp-content/uploads/2014/07/web-development-background.jpg")}
+
+*{padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;}
+
+body
+{font-family: montserrat;}
+
+nav
+{background:transparent;
+height: 50px;
+width: 100%;}
+
+.icons 
+{color: white;
+font-size: 35px;
+line-height: 50px;
+padding: 0 30px;
+font-weight: bold;
+float:right;}
+
+nav ul
+{float: left;
+margin-right: 20px;}
+
+nav ul li
+{display: inline-block;
+line-height: 50px;
+margin: 0 5px;}
+
+nav ul li a
+{color: white;
+font-size: 17px;
+padding: 7px 13px;
+text-transform: uppercase;}
+
+li a.active,a:hover
+{background: transparent;
+transition: .5s;
+border-bottom: 3px solid grey;}
+
+.checkbtn
+{font-size: 30px;
+color: white;
+float: left;
+line-height: 50px;
+margin-left: 35px;
+cursor: pointer;
+display: none;}
+
+#check
+{display: none;}
+
+@media (max-width: 858px){
+.checkbtn
+{Display: block;}
+ul
+{position: fixed;
+width: 100%;
+height: 100vh;
+background: black;
+top: 50px;
+left: -100%;
+text-align: center;
+transition: all .5s;}
+nav ul li
+{display: block;
+margin: 50px 0;
+line-height: 30px;}
+ul a:hover,a.active
+{background: none;
+color: grey;}
+#check:checked ~ ul
+{left: 0;}}
+
+section
+{background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);}
+
+
+
+.textbox
+{padding:125px;
+color:white;}
+
+.textbox a 
+{background-color:transparent;
+color: #424141;
+padding: 15px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-weight:bold;
+border: 2px solid #424141;}
+
+.textbox a:hover, a:active 
+{background-color:#424141;
+color:black;}
+
+.textbox h1
+{margin: 25px 0px 0px 0px;
+padding:0px;
+font-size: 325%;}
+
+.textbox h2
+{margin: 0px 0px -15px 0px;
+padding:0px;
+font-size: 200%;}      
+
+.textbox h3 
+{color:white;
+margin:75px 0px 50px 0px}        
+
+#bioline
+{margin:0px 0px 0px 15px;}
+
+@media (max-width: 800px) {
+.footer 
+{padding: 25px 25px 200px 25px;} 
+.textbox 
+{text-align:center;}}
+
+.box h2
+{background-color:#424141;
+color:black;
+padding: 15px 100px 15px 200px;
+margin:-10px 0px 25px 0px;
+text-align: left;
+text-decoration: none;
+display: inline-block;
+font-weight:bold;
+border: 2px solid #424141;
+font-size:30px}
+
+.projectcontainer 
+{display: flex;
+flex-wrap: wrap;
+font-size: 30px;
+text-align: center;
+margin: 0px 35px 0px 35px;
+padding: 50px 0 px 0px 50px ;}
+
+.projectitem 
+{background-color: #f1f1f1;
+padding: 0px;
+flex: 25;
+height:350px;
+margin:0px;
+padding:0px;}
+
+.projectitem a
+{border:none;}
+
+.projectitem img 
+{width:100%;
+height:350px;
+padding:0px;
+margin:0px;
+filter: grayscale(75%);}
+
+.projectitem img:hover
+{transform: scale(1.05);}
+
+@media (max-width: 1100px) 
+{.projectitem {flex: 100%;}}
+
+@media (max-width: 800px) 
+{.projectitem {flex: 100%;}}
+
+/*Footer code*/
+.footer 
+{width:100%;
+margin-top: 0px;
+padding-top: 10px;
+background-color:#333333;
+max-height: 500px;
+color:black;}
+  
+.footer h3 
+{colorblack;
+text-align: center;
+padding:10px 0px 0px 0px;
+margin:0px}
+  
+.footer h5  
+{color:#000000;
+text-align: center;
+padding:0px 0px 0px 0px;
+margin:0px;
+max-width:100%;}      
+  
+.ftrmenu
+{list-style-type: none;
+text-align: center;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+list-style-type: none;}
+    
+.ftrmenu a 
+{display: inline-block;
+width:50px;
+height:50px;
+padding: 10px;
+list-style-type:none;
+font-size:25px;}
+    
+.ftrmenu a
+{margin:5px;
+padding:0px;
+color:black;
+text-decoration:none;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+border: none;}
+   
+#ftrline1
+{margin-top: -5px;
+padding-bottom: 5px;}
+
+#ftrline2 
+{margin-top: -10px;
+padding-bottom: 10px;
+color:black}
+  
+#ftricon:hover 
+{transform: scale(1.5,1.5);
+transition: transform 0.3s ease;
+text-decoration:none;
+color:#dbc9c9;
+padding:0px;}
+  
+@media (max-width: 800px) {
+.footer 
+{padding: 25px 25px 50px 25px;} 
+.bio 
+{text-align:center; 
+position:relative;
+margin:0px; }}
+
+.box 
+{background-color:#dbdada;
+max-height:2000px;
+width:100%;
+padding:50px 0px 150px 0px;
+text-align:left;}
+
+.icons 
+{float:right;
+font-size:20px}
+
+.icons a
+{color:white;
+text-size:50%;;
+text-decoration:none;
+padding-left:4px;
+border:none;} 
+ 
+.icons i:hover
+{ transform: scale(1.5,1.5);}
+
+ 

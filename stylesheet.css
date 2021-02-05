@@ -2,7 +2,8 @@ html
 {scroll-behavior: smooth;}
 
  .bio{
-background-image: url("https://www.vtldesign.hu/wp-content/uploads/2014/07/web-development-background.jpg")}
+background-image: url("https://www.vtldesign.hu/wp-content/uploads/2014/07/web-development-background.jpg");
+height:100vh;}
 
 *{padding: 0;
 margin: 0;
